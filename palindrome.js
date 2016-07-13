@@ -1,10 +1,14 @@
+// Return true if the given string is a palindrome. Otherwise, return false.
+// A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+
+
 function palindrome(str) {
   // Remove any non-alphanumeric characters from str
   str = str.replace(/[^0-9a-z]/gi, '');
 
   // Convert str to lower case and removed spaces
   str = str.toLowerCase().replace(' ', '');
-  
+
   // create a new variable to hold an array version of str
   var newstr = str.split('');
 
